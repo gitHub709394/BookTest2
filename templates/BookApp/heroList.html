@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+</head>
+<body>
+<ul>
+    {% for hero in page %}
+        <li>
+            {{  hero.hName }}
+        </li>
+    {% endfor %}
+</ul>
+<hr/>
+{% for i in page.paginator.page_range %}
+    <a  href="{% url 'bookTest:heroList' i %}">{{ i }}</a>
+{% endfor %}
+</body>
+</html>

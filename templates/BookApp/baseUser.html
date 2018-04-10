@@ -1,0 +1,12 @@
+{% extends "BookApp/base.html" %}
+{% block content1 %}
+
+    <div style="display: inline-block;width: 35%;height:550px;background-color: red">
+        {% block userLeft %}{% endblock userLeft %}
+    </div>
+
+    <div style="display: inline-block;width: 35%;height:550px;background-color: darkseagreen">
+        {% block userContent %} {% endblock userContent %}
+    </div>
+
+{% endblock content1 %}

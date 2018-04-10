@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>你好</title>
+</head>
+<body>
+{#    {% 表示执行Python代码 %} #}
+{#    {{ 表示 输出 }}  #}
+    <h1>{{ title }}</h1>
+<ul>
+{% for tmp in dataList %}
+    <li><a href="/bookTest/show/{{ tmp.id }}">{{ tmp.bTitle }}</a></li>
+    {% endfor %}
+</ul>
+<h2>{{ hero.hName }}</h2>
+
+<br/>
+{#反向解析#}
+<a href="{%  url 'bookTest:reverseAnyais' '123' 456 %} ">反向解析</a>
+
+</body>
+</html>
