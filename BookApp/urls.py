@@ -22,5 +22,6 @@ urlpatterns = [
     path("uploadFile/",views.uploadFile,name="uploadFile"),
     path("uploadFileHandler/",views.uploadFileHandler,name="uploadFileHandler"),
     path("heroList/<int:pageIndex>",views.heroList,name="heroList")
+
 ]
 
